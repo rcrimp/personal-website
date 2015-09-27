@@ -1,0 +1,161 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   height: 100%;
+   width: 100%;
+   color: white;
+   background-color: #202024;
+   font-family: "Helvetica Neue", "Helvetica",Arial, sans-serif;
+}
+
+h1 {
+   margin: 0.5em;
+   text-align: center;
+   font-weight: bold;
+}
+
+h2 {
+   margin: 0.5em;
+}
+h3 {
+   color: #777;
+}
+
+hr {
+   border-width: 0;
+   color: transparent;
+   background-color: transparent;
+   height: 3em;
+}
+
+.profile-img {
+   display:block;
+   margin: 0.5em auto 0.5em auto;
+
+   width: 300px;
+   height 300px;
+   border-radius: 150px;
+   -webkit-border-radius: 150px;
+   -moz-border-radius: 150px;
+
+}
+
+.label {
+   margin: 1em 0 0 0;
+   padding: 0;
+   font-size: 80%;
+   color: #777;
+}
+
+a {
+   color: white;
+   text-decoration: none;
+   transition: color 0.2s ease 0s;
+}
+
+a:hover {
+   color: #2D559D
+}
+
+.button {
+   display:block;
+   width: 180px;
+   padding: 1em;
+   margin: 1em auto;
+   text-align: center;
+   color: white;
+
+   font-size: 100%;
+
+   background: #2D559D;
+
+   /* border */
+   border-width: 0;
+   border-style: none;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+}
+
+.button:hover {
+   cursor: hand;
+   cursor: pointer;
+   color: white;
+}
+
+nav {
+   position: fixed;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   background-color: #141416;
+}
+
+nav ul {
+   padding: 0;
+   max-width: 500px;
+   margin: 0 auto;
+   font-size: 0;
+   list-style-type: none; /* remove bullet points */
+}
+
+.nav-button {
+   display: inline-block;
+   font-size: 14px;
+}
+
+.nav-button a {
+   display: block;
+   width: 100px;
+   padding: 0.6em 0 0.6em 0;
+   color: #777;
+   text-align: center;
+   transition: all 0.3s ease 0s;
+   font-weight: bold;
+}
+
+.nav-selected a, 
+.nav-button a:hover {
+   background: #2D559D;
+   color: white;
+}
+
+footer {
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   padding: 0em;
+
+   background-color: #303036; 
+   color: #777;
+   text-align: center;
+}
+
+.center-text {
+   text-align: center;
+}
+
+.column-wrapper {
+   margin: 0;
+   padding: 0;
+   max-width: 500px;
+   overflow: auto;
+   height: 100%;
+   margin: 0 auto; 
+}
+.column-left {
+   width:200px;
+   float:left;
+   padding: 1em;
+}
+.column-right {
+   width:200px;
+   float: right;
+   padding: 1em;
+}
