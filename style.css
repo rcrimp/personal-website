@@ -11,14 +11,16 @@ html {
    font-family: "Helvetica Neue", "Helvetica",Arial, sans-serif;
 }
 
+* p:not(first-child){
+   margin: 5px 0; 
+}
+
 h1 {
-   margin: 0.5em;
    text-align: center;
    font-weight: bold;
 }
 
 h2 {
-    margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
@@ -135,6 +137,7 @@ footer {
 
 .project, .project:after {
    clear: both;
+   padding-top: 10px;
 }
 
 .project h2 {
@@ -143,7 +146,7 @@ footer {
 .project-content img {
    float: left;
    margin-right: 10px;
-   max-width: 90px;
+   width: 90px;
 }
 
 .project-content p {
