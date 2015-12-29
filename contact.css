@@ -1,0 +1,36 @@
+a {
+   color: white;
+   text-decoration: none;
+   transition: color 0.2s ease 0s;
+}
+
+a:hover {
+   color: #2D559D
+}
+
+.button {
+   display:block;
+   width: 180px;
+   padding: 1em;
+   margin: 1em auto;
+   text-align: center;
+   color: white;
+
+   font-size: 100%;
+
+   background: #2D559D;
+
+   /* border */
+   border-width: 0;
+   border-style: none;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+}
+
+.button:hover {
+   cursor: hand;
+   cursor: pointer;
+   color: white;
+}
+

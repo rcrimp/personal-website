@@ -18,8 +18,10 @@ h1 {
 }
 
 h2 {
-   margin: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
+
 h3 {
    color: #777;
 }
@@ -29,6 +31,10 @@ hr {
    color: transparent;
    background-color: transparent;
    height: 3em;
+}
+
+a {
+   color: #2D559D;
 }
 
 .profile-img {
@@ -41,49 +47,6 @@ hr {
    -webkit-border-radius: 150px;
    -moz-border-radius: 150px;
 
-}
-
-.label {
-   margin: 1em 0 0 0;
-   padding: 0;
-   font-size: 80%;
-   color: #777;
-}
-
-a {
-   color: white;
-   text-decoration: none;
-   transition: color 0.2s ease 0s;
-}
-
-a:hover {
-   color: #2D559D
-}
-
-.button {
-   display:block;
-   width: 180px;
-   padding: 1em;
-   margin: 1em auto;
-   text-align: center;
-   color: white;
-
-   font-size: 100%;
-
-   background: #2D559D;
-
-   /* border */
-   border-width: 0;
-   border-style: none;
-   border-radius: 5px;
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-}
-
-.button:hover {
-   cursor: hand;
-   cursor: pointer;
-   color: white;
 }
 
 nav {
@@ -117,13 +80,21 @@ nav ul {
    text-align: center;
    transition: all 0.3s ease 0s;
    font-weight: bold;
+   text-decoration: none;
 }
 
-.nav-selected a, 
-.nav-button a:hover {
+.nav-button a:hover, 
+.nav-selected a {
    background: #2D559D;
    color: white;
 }
+.label {
+   margin: 1em 0 0 0;
+   padding: 0;
+   font-size: 80%;
+   color: #777;
+}
+
 
 footer {
    position: absolute;
@@ -149,20 +120,33 @@ footer {
    height: 100%;
    margin: 0 auto; 
 }
+
 .column-left {
    width:200px;
    float:left;
    padding: 1em;
 }
+
 .column-right {
    width:200px;
    float: right;
    padding: 1em;
 }
 
-.project p{
-   float: left;
+.project, .project:after {
+   clear: both;
 }
-.project a {
-   float: right;
+
+.project h2 {
+}
+
+.project-content img {
+   float: left;
+   margin-right: 10px;
+   max-width: 90px;
+}
+
+.project-content p {
+   width: 400px;
+   float: left;
 }
